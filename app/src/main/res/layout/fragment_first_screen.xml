@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".firstscreen.FirstScreenFragment">
+    <data>
+        <variable
+            name="firstScreenViewModel"
+            type="com.example.tictactoeonsteroids.firstscreen.FirstScreenViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/resumeGameButton"
+            style="@style/Main_Buttons"
+            android:onClick="@{() -> firstScreenViewModel.onResumeGame()}"
+            android:text="@string/button_resumeGame" />
+
+        <Button
+            android:id="@+id/newGameButton"
+            style="@style/Main_Buttons"
+            android:text="@string/button_newGame"
+            android:onClick="@{() -> firstScreenViewModel.onNewGame()}"/>
+
+        <Button
+            android:id="@+id/historyButton"
+            style="@style/Main_Buttons"
+            android:text="@string/button_History" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            style="@style/Main_Buttons"
+            android:text="@string/button_settings" />
+    </LinearLayout>
+</layout>

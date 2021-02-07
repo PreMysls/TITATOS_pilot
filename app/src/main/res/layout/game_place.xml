@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp">
+
+<!--    <Button-->
+<!--        android:id="@+id/button14"-->
+<!--        style="@style/Game_Place_Buttons"-->
+
+<!--        app:layout_constraintBottom_toTopOf="@+id/button17"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/button15"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button15"-->
+<!--        style="@style/Game_Place_Buttons"-->
+
+<!--        app:layout_constraintBottom_toTopOf="@+id/button18"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/button16"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/button14"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button16"-->
+<!--        style="@style/Game_Place_Buttons"-->
+
+<!--        app:layout_constraintBottom_toTopOf="@+id/button19"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/button15"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button17"-->
+<!--        style="@style/Game_Place_Buttons"-->
+
+<!--        app:layout_constraintBottom_toTopOf="@+id/button20"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/button18"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button14" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button18"-->
+<!--        style="@style/Game_Place_Buttons"-->
+
+<!--        app:layout_constraintBottom_toTopOf="@+id/button21"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/button19"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/button17"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button15" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button19"-->
+<!--        style="@style/Game_Place_Buttons"-->
+
+<!--        app:layout_constraintBottom_toTopOf="@+id/button22"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/button18"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button16" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button20"-->
+<!--        style="@style/Game_Place_Buttons"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/button21"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button17" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button21"-->
+<!--        style="@style/Game_Place_Buttons"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/button22"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/button20"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button18" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button22"-->
+<!--        style="@style/Game_Place_Buttons"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/button21"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button19" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

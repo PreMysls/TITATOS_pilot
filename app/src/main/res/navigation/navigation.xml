@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/firstScreenFragment2">
+    <fragment
+        android:id="@+id/firstScreenFragment2"
+        android:name="com.example.tictactoeonsteroids.firstscreen.FirstScreenFragment"
+        android:label="FirstScreenFragment">
+        <action
+            android:id="@+id/action_firstScreenFragment2_to_gameFragment2"
+            app:destination="@id/gameFragment2" />
+        <action
+            android:id="@+id/action_firstScreenFragment2_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameFragment2"
+        android:name="com.example.tictactoeonsteroids.game.GameFragment"
+        android:label="fragment_game">
+        <argument
+            android:name="gameId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_gameFragment2_to_finishFragment"
+            app:destination="@id/finishFragment"
+            app:popUpTo="@id/firstScreenFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.tictactoeonsteroids.history.HistoryFragment"
+        android:label="HistoryFragment" />
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.example.tictactoeonsteroids.finish.FinishFragment"
+        android:label="FinishFragment">
+        <argument
+            android:name="playerWon"
+            app:argType="boolean" />
+        <argument
+            android:name="position"
+            app:argType="com.example.tictactoeonsteroids.enums.PositionsEnum" />
+        <argument
+            android:name="attribute"
+            app:argType="com.example.tictactoeonsteroids.enums.AttributeEnum" />
+        <argument
+            android:name="value"
+            app:argType="com.example.tictactoeonsteroids.enums.AttributeValueEnum" />
+        <action
+            android:id="@+id/action_finishFragment_to_gameFragment2"
+            app:destination="@id/gameFragment2" />
+    </fragment>
+</navigation>

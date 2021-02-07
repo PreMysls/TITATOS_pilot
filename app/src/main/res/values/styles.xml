@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Main_Buttons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="fontFamily">@font/rubik_mono_one</item>
+        <item name="android:textSize">32dp</item>
+
+    </style>
+
+    <style name="Game_Place_Buttons">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintDimensionRatio">1:1</item>
+    </style>
+</resources>

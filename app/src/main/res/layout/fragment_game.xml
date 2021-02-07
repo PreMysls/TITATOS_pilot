@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".game.GameFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutGameButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/dark_grey"
+            app:layout_constraintBottom_toTopOf="@id/setColorButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorButtonEngine">
+
+            <!--        android:text="@{gameViewModel.symbolOne}"-->
+
+
+            <ImageButton
+                android:id="@+id/gamePlaceButton1"
+                style="@style/Game_Place_Buttons"
+
+                android:onClick="@{() -> gameViewModel.gameButtonPressed(0)}"
+
+                app:layout_constraintBottom_toTopOf="@+id/gamePlaceButton4"
+                app:layout_constraintEnd_toStartOf="@+id/gamePlaceButton2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/gamePlaceButton2"
+                style="@style/Game_Place_Buttons"
+
+                android:onClick="@{() -> gameViewModel.gameButtonPressed(1)}"
+
+                app:layout_constraintBottom_toTopOf="@+id/gamePlaceButton5"
+                app:layout_constraintEnd_toStartOf="@+id/gamePlaceButton3"
+                app:layout_constraintStart_toEndOf="@+id/gamePlaceButton1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/gamePlaceButton3"
+                style="@style/Game_Place_Buttons"
+
+                android:onClick="@{() -> gameViewModel.gameButtonPressed(2)}"
+
+                app:layout_constraintBottom_toTopOf="@+id/gamePlaceButton6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/gamePlaceButton2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/gamePlaceButton4"
+                style="@style/Game_Place_Buttons"
+
+                android:onClick="@{() -> gameViewModel.gameButtonPressed(3)}"
+
+                app:layout_constraintBottom_toTopOf="@+id/gamePlaceButton7"
+                app:layout_constraintEnd_toStartOf="@+id/gamePlaceButton5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gamePlaceButton1" />
+
+            <ImageButton
+                android:id="@+id/gamePlaceButton5"
+                style="@style/Game_Place_Buttons"
+
+                android:onClick="@{() -> gameViewModel.gameButtonPressed(4)}"
+
+                app:layout_constraintBottom_toTopOf="@+id/gamePlaceButton8"
+                app:layout_constraintEnd_toStartOf="@+id/gamePlaceButton6"
+                app:layout_constraintStart_toEndOf="@+id/gamePlaceButton4"
+                app:layout_constraintTop_toBottomOf="@+id/gamePlaceButton2" />
+
+            <ImageButton
+                android:id="@+id/gamePlaceButton6"
+                style="@style/Game_Place_Buttons"
+
+                android:onClick="@{() -> gameViewModel.gameButtonPressed(5)}"
+
+                app:layout_constraintBottom_toTopOf="@+id/gamePlaceButton9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/gamePlaceButton5"
+                app:layout_constraintTop_toBottomOf="@+id/gamePlaceButton3" />
+
+            <ImageButton
+                android:id="@+id/gamePlaceButton7"
+                style="@style/Game_Place_Buttons"
+
+                android:onClick="@{() -> gameViewModel.gameButtonPressed(6)}"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gamePlaceButton8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gamePlaceButton4" />
+
+            <ImageButton
+                android:id="@+id/gamePlaceButton8"
+                style="@style/Game_Place_Buttons"
+
+                android:onClick="@{() -> gameViewModel.gameButtonPressed(7)}"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gamePlaceButton9"
+                app:layout_constraintStart_toEndOf="@+id/gamePlaceButton7"
+                app:layout_constraintTop_toBottomOf="@+id/gamePlaceButton5" />
+
+            <ImageButton
+                android:id="@+id/gamePlaceButton9"
+                style="@style/Game_Place_Buttons"
+
+                android:onClick="@{() -> gameViewModel.gameButtonPressed(8)}"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/gamePlaceButton8"
+                app:layout_constraintTop_toBottomOf="@+id/gamePlaceButton6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageButton
+            android:id="@+id/setBackgroundButton"
+            style="@style/Game_Place_Buttons"
+
+            android:onClick="@{() -> gameViewModel.backgroundButtonPressed()}"
+
+            app:layout_constraintBottom_toBottomOf="@+id/setColorButton"
+            app:layout_constraintEnd_toStartOf="@+id/setColorButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/setColorButton" />
+
+        <ImageButton
+            android:id="@+id/setColorButton"
+            style="@style/Game_Place_Buttons"
+
+            android:onClick="@{() -> gameViewModel.colorButtonPressed()}"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/setScaleButton"
+            app:layout_constraintStart_toEndOf="@+id/setBackgroundButton"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutGameButton" />
+
+        <ImageButton
+            android:id="@+id/setScaleButton"
+            style="@style/Game_Place_Buttons"
+
+            android:onClick="@{() -> gameViewModel.scaleButtonPressed()}"
+
+            app:layout_constraintBottom_toBottomOf="@+id/setColorButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/setColorButton"
+            app:layout_constraintTop_toTopOf="@+id/setColorButton" />
+
+        <ImageButton
+            android:id="@+id/backgroundButtonEngine"
+
+            style="@style/Game_Place_Buttons"
+
+            app:layout_constraintBottom_toBottomOf="@+id/colorButtonEngine"
+            app:layout_constraintEnd_toStartOf="@+id/colorButtonEngine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/colorButtonEngine" />
+
+        <ImageButton
+            android:id="@+id/colorButtonEngine"
+            style="@style/Game_Place_Buttons"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayoutGameButton"
+            app:layout_constraintEnd_toStartOf="@+id/scaleButtonEngine"
+            app:layout_constraintStart_toEndOf="@+id/backgroundButtonEngine"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/scaleButtonEngine"
+            style="@style/Game_Place_Buttons"
+            app:layout_constraintBottom_toBottomOf="@+id/colorButtonEngine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/colorButtonEngine"
+            app:layout_constraintTop_toTopOf="@+id/colorButtonEngine" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <data>
+
+        <variable
+            name="gameViewModel"
+            type="com.example.tictactoeonsteroids.game.GameViewModel" />
+
+    </data>
+
+</layout>
